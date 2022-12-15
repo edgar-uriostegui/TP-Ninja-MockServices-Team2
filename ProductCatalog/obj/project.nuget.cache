@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "CIauZxmVnD2dKD398VjnICIhQG0A0QTdtleDnrLRA1lh1yJZ9FAeee8gGLqtgoPvYo2DHHgv/3VF5XLKoClRzw==",
+  "dgSpecHash": "kN8kAgZr/FYnFjhu/q+8FTWgl/6A8GIW6tHffTvb/2/MenfgoN1QgWEiKrJZq6nxK/hyhFfvIVUN42HFRbOKCA==",
   "success": true,
-  "projectFilePath": "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\oliver.rosas\\Documents\\Globant\\Accounts\\Talent Pool\\E-commers\\Code\\edgar-uriostegui\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oliver.rosas\\.nuget\\packages\\microsoft.aspnetcore.odata\\8.0.12\\microsoft.aspnetcore.odata.8.0.12.nupkg.sha512",
+    "C:\\Users\\oliver.rosas\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "C:\\Users\\oliver.rosas\\.nuget\\packages\\microsoft.odata.core\\7.13.0\\microsoft.odata.core.7.13.0.nupkg.sha512",
+    "C:\\Users\\oliver.rosas\\.nuget\\packages\\microsoft.odata.edm\\7.13.0\\microsoft.odata.edm.7.13.0.nupkg.sha512",
+    "C:\\Users\\oliver.rosas\\.nuget\\packages\\microsoft.odata.modelbuilder\\1.0.8\\microsoft.odata.modelbuilder.1.0.8.nupkg.sha512",
+    "C:\\Users\\oliver.rosas\\.nuget\\packages\\microsoft.spatial\\7.13.0\\microsoft.spatial.7.13.0.nupkg.sha512",
+    "C:\\Users\\oliver.rosas\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512",
+    "C:\\Users\\oliver.rosas\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+    "C:\\Users\\oliver.rosas\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\oliver.rosas\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512"
+  ],
   "logs": []
 }

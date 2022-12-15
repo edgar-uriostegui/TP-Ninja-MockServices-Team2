@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj": {}
+    "C:\\Users\\oliver.rosas\\Documents\\Globant\\Accounts\\Talent Pool\\E-commers\\Code\\edgar-uriostegui\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj": {}
   },
   "projects": {
-    "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj": {
+    "C:\\Users\\oliver.rosas\\Documents\\Globant\\Accounts\\Talent Pool\\E-commers\\Code\\edgar-uriostegui\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
+        "projectUniqueName": "C:\\Users\\oliver.rosas\\Documents\\Globant\\Accounts\\Talent Pool\\E-commers\\Code\\edgar-uriostegui\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
         "projectName": "ProductCatalog",
-        "projectPath": "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
-        "packagesPath": "C:\\Users\\edgar.uriostegui\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\obj\\",
+        "projectPath": "C:\\Users\\oliver.rosas\\Documents\\Globant\\Accounts\\Talent Pool\\E-commers\\Code\\edgar-uriostegui\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
+        "packagesPath": "C:\\Users\\oliver.rosas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oliver.rosas\\Documents\\Globant\\Accounts\\Talent Pool\\E-commers\\Code\\edgar-uriostegui\\TP-Ninja-MockServices-Team2\\ProductCatalog\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\edgar.uriostegui\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\oliver.rosas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Nuget": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://artifactory.vizio.com/artifactory/api/nuget/v3/vizio-nuget": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\oliver.rosas\\Documents\\Globant\\Accounts\\GreenDot\\NugetLocal": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -41,13 +41,24 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OData": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Microsoft.OData.Core": {
+              "target": "Package",
+              "version": "[7.13.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -59,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
