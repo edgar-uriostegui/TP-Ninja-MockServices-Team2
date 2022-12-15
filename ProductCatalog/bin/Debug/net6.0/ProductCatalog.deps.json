@@ -7,87 +7,10 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "ProductCatalog/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.OData": "8.0.12",
-          "Microsoft.OData.Core": "7.13.0"
-        },
         "runtime": {
           "ProductCatalog.dll": {}
         }
-      },
-      "Microsoft.AspNetCore.OData/8.0.12": {
-        "dependencies": {
-          "Microsoft.OData.Core": "7.13.0",
-          "Microsoft.OData.Edm": "7.13.0",
-          "Microsoft.OData.ModelBuilder": "1.0.8",
-          "Microsoft.Spatial": "7.13.0"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.OData.dll": {
-            "assemblyVersion": "8.0.12.0",
-            "fileVersion": "8.0.12.31209"
-          }
-        }
-      },
-      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
-          }
-        }
-      },
-      "Microsoft.OData.Core/7.13.0": {
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
-          "Microsoft.OData.Edm": "7.13.0",
-          "Microsoft.Spatial": "7.13.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.OData.Core.dll": {
-            "assemblyVersion": "7.13.0.0",
-            "fileVersion": "7.13.0.31208"
-          }
-        }
-      },
-      "Microsoft.OData.Edm/7.13.0": {
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.6.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.OData.Edm.dll": {
-            "assemblyVersion": "7.13.0.0",
-            "fileVersion": "7.13.0.31208"
-          }
-        }
-      },
-      "Microsoft.OData.ModelBuilder/1.0.8": {
-        "dependencies": {
-          "Microsoft.OData.Edm": "7.13.0",
-          "Microsoft.Spatial": "7.13.0",
-          "System.ComponentModel.Annotations": "4.6.0"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.OData.ModelBuilder.dll": {
-            "assemblyVersion": "1.0.8.0",
-            "fileVersion": "1.0.8.30106"
-          }
-        }
-      },
-      "Microsoft.Spatial/7.13.0": {
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Spatial.dll": {
-            "assemblyVersion": "7.13.0.0",
-            "fileVersion": "7.13.0.31208"
-          }
-        }
-      },
-      "System.ComponentModel.Annotations/4.6.0": {},
-      "System.Runtime.CompilerServices.Unsafe/4.6.0": {},
-      "System.Text.Encodings.Web/4.7.2": {},
-      "System.Text.Json/4.6.0": {}
+      }
     }
   },
   "libraries": {
@@ -95,76 +18,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "Microsoft.AspNetCore.OData/8.0.12": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-THP/yG3nQZZRTZ4Asly0/sBBBmR92pKEYMG9X2GHgaN8/268sz9e4pyWwgcR7J/uUjFYjiV2ufxr8wV5X3L4pg==",
-      "path": "microsoft.aspnetcore.odata/8.0.12",
-      "hashPath": "microsoft.aspnetcore.odata.8.0.12.nupkg.sha512"
-    },
-    "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
-      "path": "microsoft.bcl.asyncinterfaces/5.0.0",
-      "hashPath": "microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512"
-    },
-    "Microsoft.OData.Core/7.13.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OSDY4rhkFKE2T0F/aVifuddUa+sxlInaAX9WqDIRX1qRWTdfEGFILrcDKTDBQy2t0awGOqfrCLIV5e076mlzFw==",
-      "path": "microsoft.odata.core/7.13.0",
-      "hashPath": "microsoft.odata.core.7.13.0.nupkg.sha512"
-    },
-    "Microsoft.OData.Edm/7.13.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yL6WqD/2WJ9ka42TQl/5LluBvYPH/rDhi7Jg54rnPjdGc/aEzt3+S1LLb8zNCXa8gEjMxdDANog1ZFbuds926g==",
-      "path": "microsoft.odata.edm/7.13.0",
-      "hashPath": "microsoft.odata.edm.7.13.0.nupkg.sha512"
-    },
-    "Microsoft.OData.ModelBuilder/1.0.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-svkoLjtvdRtyAuhcBugNAmKYE3zHFXE3C2HpaRXKeuB5mVxo5DK8ZSxoox0PqiwTSFqq0hlWNy5GC1fVgQlElQ==",
-      "path": "microsoft.odata.modelbuilder/1.0.8",
-      "hashPath": "microsoft.odata.modelbuilder.1.0.8.nupkg.sha512"
-    },
-    "Microsoft.Spatial/7.13.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Yh8jOnXt2K7NnWy46FXJ7LDYs35NvQRAWR3l4Is2jWIM9Si5YGcLVRsH03HPjFNEU8KcWqfZVI3VFGwMQiXUsg==",
-      "path": "microsoft.spatial/7.13.0",
-      "hashPath": "microsoft.spatial.7.13.0.nupkg.sha512"
-    },
-    "System.ComponentModel.Annotations/4.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pOd+UhZ3X8xfwKDlgAzowUJNjp8VYVmOHZm++vCd0kq1HZ0zK3mNo2yRXjYgv7Ik/Xi43fmJfND2PLEsQSALCg==",
-      "path": "system.componentmodel.annotations/4.6.0",
-      "hashPath": "system.componentmodel.annotations.4.6.0.nupkg.sha512"
-    },
-    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
-      "path": "system.runtime.compilerservices.unsafe/4.6.0",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
-    },
-    "System.Text.Encodings.Web/4.7.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-iTUgB/WtrZ1sWZs84F2hwyQhiRH6QNjQv2DkwrH+WP6RoFga2Q1m3f9/Q7FG8cck8AdHitQkmkXSY8qylcDmuA==",
-      "path": "system.text.encodings.web/4.7.2",
-      "hashPath": "system.text.encodings.web.4.7.2.nupkg.sha512"
-    },
-    "System.Text.Json/4.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
-      "path": "system.text.json/4.6.0",
-      "hashPath": "system.text.json.4.6.0.nupkg.sha512"
     }
   }
 }

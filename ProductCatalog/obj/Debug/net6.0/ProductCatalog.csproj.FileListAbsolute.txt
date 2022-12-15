@@ -26,18 +26,11 @@ C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edga
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\bin\Debug\net6.0\ProductCatalog.runtimeconfig.json
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\bin\Debug\net6.0\ProductCatalog.dll
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\bin\Debug\net6.0\ProductCatalog.pdb
-C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\bin\Debug\net6.0\Microsoft.AspNetCore.OData.dll
-C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\bin\Debug\net6.0\Microsoft.OData.Core.dll
-C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\bin\Debug\net6.0\Microsoft.OData.Edm.dll
-C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\bin\Debug\net6.0\Microsoft.OData.ModelBuilder.dll
-C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\bin\Debug\net6.0\Microsoft.Spatial.dll
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\ProductCatalog.csproj.AssemblyReference.cache
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\ProductCatalog.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\ProductCatalog.AssemblyInfoInputs.cache
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\ProductCatalog.AssemblyInfo.cs
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\ProductCatalog.csproj.CoreCompileInputs.cache
-C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\ProductCatalog.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\ProductCatalog.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\staticwebassets\msbuild.ProductCatalog.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\staticwebassets\msbuild.build.ProductCatalog.props
@@ -47,7 +40,6 @@ C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edga
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\scopedcss\bundle\ProductCatalog.styles.css
-C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\ProductCatalog.csproj.CopyComplete
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\ProductCatalog.dll
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\refint\ProductCatalog.dll
 C:\Users\oliver.rosas\Documents\Globant\Accounts\Talent Pool\E-commers\Code\edgar-uriostegui\TP-Ninja-MockServices-Team2\ProductCatalog\obj\Debug\net6.0\ProductCatalog.pdb
