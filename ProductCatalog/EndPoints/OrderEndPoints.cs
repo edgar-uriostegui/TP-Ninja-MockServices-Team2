@@ -24,6 +24,9 @@ namespace ProductCatalog.EndPoints
             order.Id = OrderStore.orders.OrderByDescending(u=>u.Id).FirstOrDefault().Id+1;
             OrderStore.orders.Add(order);
             return Results.Ok(order.Id);
+
+            // ToDo
+            // Once an order is created the stock of a product should be updated.
             //return Results.Created($"/v1/productCatalog/update/{order.ProductId}", order);
         }
     }
