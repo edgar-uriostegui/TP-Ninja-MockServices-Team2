@@ -1,29 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj": {}
+    "C:\\Users\\alexis.yama\\source\\Proyecto Minimal API\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj": {}
   },
   "projects": {
-    "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj": {
+    "C:\\Users\\alexis.yama\\source\\Proyecto Minimal API\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
+        "projectUniqueName": "C:\\Users\\alexis.yama\\source\\Proyecto Minimal API\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
         "projectName": "ProductCatalog",
-        "projectPath": "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
-        "packagesPath": "C:\\Users\\edgar.uriostegui\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\obj\\",
+        "projectPath": "C:\\Users\\alexis.yama\\source\\Proyecto Minimal API\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
+        "packagesPath": "C:\\Users\\alexis.yama\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexis.yama\\source\\Proyecto Minimal API\\TP-Ninja-MockServices-Team2\\ProductCatalog\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\edgar.uriostegui\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\alexis.yama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Nuget": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://artifactory.vizio.com/artifactory/api/nuget/v3/vizio-nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,7 +51,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -59,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

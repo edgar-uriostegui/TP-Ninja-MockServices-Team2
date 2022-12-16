@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CIauZxmVnD2dKD398VjnICIhQG0A0QTdtleDnrLRA1lh1yJZ9FAeee8gGLqtgoPvYo2DHHgv/3VF5XLKoClRzw==",
+  "dgSpecHash": "XEech66oRfLeO4nkxaMY1G5ecwoCzw1steor9G8/FOMOHM1D7ZQsh/DsYP6vXZzvq6F0PFYvBAp/Y3y0nZf7YA==",
   "success": true,
-  "projectFilePath": "C:\\Git\\TP\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
+  "projectFilePath": "C:\\Users\\alexis.yama\\source\\Proyecto Minimal API\\TP-Ninja-MockServices-Team2\\ProductCatalog\\ProductCatalog.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
