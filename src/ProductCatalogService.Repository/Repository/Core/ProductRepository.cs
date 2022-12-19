@@ -17,6 +17,18 @@ namespace ProductCatalogService.Repository.Repository.Core
             return products;
         }
 
+        public List<ProductEntity> SearchProduct(int id, string sku, string name, string description, decimal cost, string category)
+        {
+            return products.Where(p => (p.Id == id)
+                || (p.Sku == sku)
+                || (p.Name == name)
+                || (p.Description == description)
+                || (p.Cost == cost)
+                || (p.Category == category)
+                && (p.NumberInStock > 0)
+                ).ToList();
+        }
+
         public static List<ProductEntity> products = new()
         {
             new ProductEntity(1, "Sku1", "Product 1", "Product 1", 10, "Category 1", 100),
