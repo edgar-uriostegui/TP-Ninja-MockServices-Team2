@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
 using ProductCatalogService.Application.Querys.Models;
-using ProductCatalogService.Application.Querys.Request;
 using ProductCatalogService.Application.Querys.Response;
 using ProductCatalogService.Application.Utils;
 using ProductCatalogService.Domain.Models;
@@ -11,45 +10,54 @@ using System.Net;
 namespace ProductCatalogService.Application.Querys
 {
     /// <summary>
-    /// Query to retrieve all Products
+    /// Query to retrieve product by Id
     /// </summary>
-    public class GetProduct
+    public class GetProductById
     {
         #region Query
         /// <summary>
-        /// QueryRequest GetProduct
+        /// QueryRequest GetProductById
         /// </summary>
         public class Query : IRequest<Response<Result>>
         {
             /// <summary>
-            /// GetProductRequest field
+            /// Id parameter
             /// </summary>
-            public GetProductRequest? Request { get; set; }
+            public int Id { get; set; }
+            /// <summary>
+            /// Constructor Query
+            /// </summary>
+            /// <param name="id"></param>
+            public Query(int id)
+            {
+                Id = id;
+            }
         }
-        #endregion 
-
+        #endregion
+        
         #region Result
         /// <summary>
-        /// Result GetProduct
+        /// Result GetProduct by Id
         /// </summary>
         public class Result
         {
             /// <summary>
-            /// GetProductResponse field
+            /// GetProductByIdResponse field
             /// </summary>
-            public GetProductResponse GetProductResponse { get; set; }
+            public GetProductByIdResponse ProductResponse { get; set; }
             /// <summary>
-            /// Ctor Result
+            /// Constructor
             /// </summary>
-            public Result(){
-                GetProductResponse = new GetProductResponse();
+            public Result()
+            {
+                ProductResponse = new GetProductByIdResponse();
             }
         }
-        #endregion 
+        #endregion
 
         #region Handler
         /// <summary>
-        /// Handler GetProduct
+        /// Handler GetProduct by Id
         /// </summary>
         public class Handler : IRequestHandler<Query, Response<Result>>
         {
@@ -57,21 +65,21 @@ namespace ProductCatalogService.Application.Querys
             private readonly IProductRepository _repository;
             private readonly Response<Result> _response;
             /// <summary>
-            /// Ctor Handler
+            /// Contructor Handler
             /// </summary>
             /// <param name="mapper"></param>
             /// <param name="repository"></param>
             public Handler(IMapper mapper, IProductRepository repository)
             {
-                _mapper= mapper;
-                _repository= repository;
-                _response= new Response<Result>
+                _mapper = mapper;
+                _repository = repository;
+                _response = new Response<Result>
                 {
-                    Payload= new Result()
+                    Payload = new Result()
                 };
             }
             /// <summary>
-            /// Handle method that executes the logic to retrieve all products
+            /// Handle method that executes the logic to retrieve product by Id
             /// </summary>
             /// <param name="request"></param>
             /// <param name="cancellationToken"></param>
@@ -80,15 +88,13 @@ namespace ProductCatalogService.Application.Querys
             {
                 try
                 {
-                    _response.Payload.GetProductResponse.Products = _mapper.Map<List<ProductEntity>, List<Product>>(_repository.GetAllProducts());
+                    _response.Payload.ProductResponse.Product = _mapper.Map<ProductEntity, Product>(_repository.GetProductById(request.Id));
                 }
                 catch (Exception ex)
                 {
-                    _response.SetFailureResponse(string.Empty, $"An error was throw trying to get all the products");
-                    _response.Payload.GetProductResponse.StatusCode = (int)HttpStatusCode.InternalServerError;
-                    throw;
+                    _response.SetFailureResponse(string.Empty, $"An error was throw trying to get product by id");
+                    _response.Payload.ProductResponse.StatusCode = (int)HttpStatusCode.InternalServerError;
                 }
-
                 return _response;
             }
         }
@@ -96,16 +102,15 @@ namespace ProductCatalogService.Application.Querys
 
         #region Mapper
         /// <summary>
-        /// Mapping profile for GetProduct
+        /// Mapping profile for for GetProductById
         /// </summary>
         public class Mapping : Profile
         {
             /// <summary>
-            /// Ctor that initialize all mappings for GetProduct
+            /// Constructor 
             /// </summary>
             public Mapping() => CreateMap<ProductEntity, Product>();
         }
         #endregion
-
     }
 }
