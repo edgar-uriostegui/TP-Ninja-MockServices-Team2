@@ -13,5 +13,11 @@ namespace ProductCatalogService.Repository.Repository.Persistance
         /// </summary>
         /// <returns></returns>
         List<ProductEntity> GetAllProducts();
+        /// <summary>
+        /// Method that retrieve product by sku
+        /// </summary>
+        /// <param name="sku"></param>
+        /// <returns></returns>
+        ProductEntity GetProductBySku(string sku);
     }
 }

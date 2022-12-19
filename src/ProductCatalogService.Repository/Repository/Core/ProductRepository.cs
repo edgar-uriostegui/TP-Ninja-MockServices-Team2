@@ -17,6 +17,11 @@ namespace ProductCatalogService.Repository.Repository.Core
             return products;
         }
 
+        public ProductEntity GetProductBySku(string sku)
+        {
+            return products.FirstOrDefault(s => s.Sku.ToUpper() == sku.ToUpper());
+        }
+
         public static List<ProductEntity> products = new()
         {
             new ProductEntity(1, "Sku1", "Product 1", "Product 1", 10, "Category 1", 100),
