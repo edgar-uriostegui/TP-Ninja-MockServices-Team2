@@ -16,6 +16,15 @@ namespace ProductCatalogService.Repository.Repository.Core
         {
             return products;
         }
+        /// <summary>
+        /// Method that retrieves product by Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public ProductEntity GetProductById(int id)
+        {
+            return products.FirstOrDefault(p => p.Id == id);
+        }
 
         public ProductEntity GetProductBySku(string sku)
         {
