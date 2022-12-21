@@ -1,4 +1,4 @@
-﻿using ProductCatalogService.Application.Commands.Models;
+﻿using ProductCatalogService.Application.Models.Common;
 using ProductCatalogService.Application.Utils;
 
 namespace ProductCatalogService.Application.Commands.Response

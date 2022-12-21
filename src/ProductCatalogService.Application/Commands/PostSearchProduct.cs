@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
 using MediatR;
-using ProductCatalogService.Application.Commands.Models;
+using ProductCatalogService.Application.Commands.Request;
 using ProductCatalogService.Application.Commands.Response;
+using ProductCatalogService.Application.Models.Common;
 using ProductCatalogService.Application.Utils;
 using ProductCatalogService.Domain.Models;
 using ProductCatalogService.Repository.Repository.Persistance;
@@ -23,12 +24,12 @@ namespace ProductCatalogService.Application.Commands
             /// <summary>
             /// Product field
             /// </summary>
-            public Product Product { get; set; }
+            public PostSearchProductRequest Product { get; }
             /// <summary>
             /// Constructor
             /// </summary>
             /// <param name="product"></param>
-            public Command(Product product)
+            public Command(PostSearchProductRequest product)
             {
                 Product = product;
             }

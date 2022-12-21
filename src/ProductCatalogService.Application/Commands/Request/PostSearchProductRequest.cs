@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProductCatalogService.Application.Commands.Models
+﻿namespace ProductCatalogService.Application.Commands.Request
 {
     /// <summary>
-    /// Model for Product
+    /// Request for Search Product
     /// </summary>
-    public class Product
+    public class PostSearchProductRequest
     {
         /// <summary>
         /// Id product
@@ -52,7 +46,7 @@ namespace ProductCatalogService.Application.Commands.Models
         /// <param name="categoryId"></param>
         /// <param name="numberInStock"></param>
 
-        public Product(int id, string sku, string name, string description, decimal cost, string category, int numberInStock)
+        public PostSearchProductRequest(int id, string sku, string name, string description, decimal cost, string category, int numberInStock)
         {
             Id = id;
             Sku = sku;
