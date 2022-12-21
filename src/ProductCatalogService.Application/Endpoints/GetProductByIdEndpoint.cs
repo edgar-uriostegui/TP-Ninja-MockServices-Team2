@@ -9,22 +9,21 @@ using ProductCatalogService.Application.Querys.Models;
 namespace ProductCatalogService.Application.Endpoints
 {
     /// <summary>
-    /// Class to represents the GetProduct Endpoint
+    /// Class to represents the GetProductById Endpoint
     /// </summary>
-    public class GetProductEndpoint : ICarterModule
+    public class GetProductByIdEndpoint : ICarterModule
     {
         /// <summary>
-        /// Add route for "productCatalog/AllProducts"
+        /// Add route for "productCatalog/ById/{id:int}
         /// </summary>
         /// <param name="app"></param>
         public void AddRoutes(IEndpointRouteBuilder app)
         {
-            app.MapGet("/api/v1/productCatalog/AllProducts", (IMediator mediator) =>
-            {
-                return mediator.Send(new GetProduct.Query());
+            app.MapGet("/api/v1/productCatalog/ById/{id:int}", (int id, IMediator mediator) => {
+                return mediator.Send(new GetProductById.Query(id));
             })
-                .WithName(nameof(GetProductEndpoint))
-                .Produces<List<Product>>(200);
+                .WithName(nameof(GetProductByIdEndpoint))
+                .Produces<Product>(200);
         }
     }
 }

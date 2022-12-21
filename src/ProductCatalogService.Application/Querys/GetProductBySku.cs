@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
 using ProductCatalogService.Application.Querys.Models;
-using ProductCatalogService.Application.Querys.Request;
 using ProductCatalogService.Application.Querys.Response;
 using ProductCatalogService.Application.Utils;
 using ProductCatalogService.Domain.Models;
@@ -10,46 +9,52 @@ using System.Net;
 
 namespace ProductCatalogService.Application.Querys
 {
-    /// <summary>
-    /// Query to retrieve all Products
-    /// </summary>
-    public class GetProduct
+    public class GetProductBySku
     {
         #region Query
         /// <summary>
-        /// QueryRequest GetProduct
+        /// QueryRequest GetProductBySku
         /// </summary>
         public class Query : IRequest<Response<Result>>
         {
             /// <summary>
-            /// GetProductRequest field
+            /// Id parameter
             /// </summary>
-            public GetProductRequest? Request { get; set; }
+            public string Sku { get; set; }
+            /// <summary>
+            /// Constructor Query
+            /// </summary>
+            /// <param name="id"></param>
+            public Query(string sku)
+            {
+                Sku = sku;
+            }
         }
-        #endregion 
+        #endregion
 
         #region Result
         /// <summary>
-        /// Result GetProduct
+        /// Result GetProductBySku
         /// </summary>
         public class Result
         {
             /// <summary>
-            /// GetProductResponse field
+            /// GetProductBySkuResponse field
             /// </summary>
-            public GetProductResponse GetProductResponse { get; set; }
+            public GetProductBySkuResponse ProductSkuResponse { get; set; }
             /// <summary>
-            /// Ctor Result
+            /// Constructor Result
             /// </summary>
-            public Result(){
-                GetProductResponse = new GetProductResponse();
+            public Result()
+            {
+                ProductSkuResponse = new GetProductBySkuResponse();
             }
         }
-        #endregion 
+        #endregion
 
         #region Handler
         /// <summary>
-        /// Handler GetProduct
+        /// Handler GetProduct by Sku
         /// </summary>
         public class Handler : IRequestHandler<Query, Response<Result>>
         {
@@ -57,21 +62,21 @@ namespace ProductCatalogService.Application.Querys
             private readonly IProductRepository _repository;
             private readonly Response<Result> _response;
             /// <summary>
-            /// Ctor Handler
+            /// Constructor
             /// </summary>
             /// <param name="mapper"></param>
             /// <param name="repository"></param>
             public Handler(IMapper mapper, IProductRepository repository)
             {
-                _mapper= mapper;
-                _repository= repository;
-                _response= new Response<Result>
+                _mapper = mapper;
+                _repository = repository;
+                _response = new Response<Result>()
                 {
-                    Payload= new Result()
+                    Payload = new Result()
                 };
             }
             /// <summary>
-            /// Handle method that executes the logic to retrieve all products
+            /// Handle method that executes the logic to retrieve product by sku
             /// </summary>
             /// <param name="request"></param>
             /// <param name="cancellationToken"></param>
@@ -80,32 +85,23 @@ namespace ProductCatalogService.Application.Querys
             {
                 try
                 {
-                    _response.Payload.GetProductResponse.Products = _mapper.Map<List<ProductEntity>, List<Product>>(_repository.GetAllProducts());
+                    _response.Payload.ProductSkuResponse.Product = _mapper.Map<ProductEntity,Product>(_repository.GetProductBySku(request.Sku));
                 }
                 catch (Exception ex)
                 {
-                    _response.SetFailureResponse(string.Empty, $"An error was throw trying to get all the products");
-                    _response.Payload.GetProductResponse.StatusCode = (int)HttpStatusCode.InternalServerError;
-                    throw;
+                    _response.SetFailureResponse(string.Empty, $"An error was throw trying to get product by sku");
+                    _response.Payload.ProductSkuResponse.StatusCode = (int)HttpStatusCode.InternalServerError;
                 }
-
                 return _response;
             }
         }
         #endregion
 
         #region Mapper
-        /// <summary>
-        /// Mapping profile for GetProduct
-        /// </summary>
-        public class Mapping : Profile
+        public class Mapping : Profile 
         {
-            /// <summary>
-            /// Ctor that initialize all mappings for GetProduct
-            /// </summary>
             public Mapping() => CreateMap<ProductEntity, Product>();
         }
         #endregion
-
     }
 }
