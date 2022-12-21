@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Commands\Models\" />
+    <Folder Include="Commands\Request\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="Carter" Version="7.0.0" />
 	<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
@@ -16,9 +21,4 @@
     <ProjectReference Include="..\ProductCatalogService.Domain\ProductCatalogService.Domain.csproj" />
     <ProjectReference Include="..\ProductCatalogService.Repository\ProductCatalogService.Repository.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Commands\" />
-  </ItemGroup>
-
 </Project>
